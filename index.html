@@ -16,7 +16,7 @@ navbar_title: Home
       <div class="card-body p-4">
         <h2 class="section-title"><i class="fas fa-address-card"></i> Contact</h2>
         <div class="contact-links">
-          <a href="mailto:{{ site.data.profile.email | encode_email }}"><i class="fas fa-at"></i> {{ site.data.profile.email | replace: "@", "(at)" }}</a>
+          <a href="mailto:{{ site.data.profile.email }}"><i class="fas fa-at"></i> {{ site.data.profile.email | replace: "@", "(at)" }}</a>
           <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
           <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-file-alt"></i> CV</a>
         </div>

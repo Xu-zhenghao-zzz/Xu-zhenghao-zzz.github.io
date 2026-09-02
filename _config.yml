@@ -9,8 +9,7 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-plugins:
-  - jekyll-email-protect
+plugins: []
 
 collections:
   publications:

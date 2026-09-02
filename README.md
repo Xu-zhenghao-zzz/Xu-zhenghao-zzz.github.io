@@ -50,10 +50,7 @@ Open the URL printed by Jekyll (normally `http://127.0.0.1:4000`).
 
 1. Create an empty public repository named `Xu-zhenghao-zzz.github.io` under the `Xu-zhenghao-zzz` account.
 2. Commit this directory and push its `main` branch to that repository.
-3. In GitHub, open **Settings -> Pages** and select **GitHub Actions** as the source.
-4. The included workflow builds Jekyll with the template's `jekyll-email-protect` plugin and deploys the generated site.
-
-The workspace repository intentionally has no push configured for the target account. Review the local preview and TODO list before adding a remote or pushing.
+3. In GitHub, open **Settings -> Pages** and deploy from the `main` branch `/` (root). GitHub's built-in Jekyll builder publishes the site.
 
 ## Content policy used in this draft
 
