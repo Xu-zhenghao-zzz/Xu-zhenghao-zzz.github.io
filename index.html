@@ -1,0 +1,133 @@
+---
+layout: default
+title: Homepage
+navbar_title: Home
+---
+
+<div class="row">
+  <aside class="col-lg-3 col-md-4">
+    {% include widgets/profile_card_mini.html %}
+  </aside>
+
+  <main class="col-lg-9 col-md-8">
+    <div class="mt-3 d-md-none"></div>
+
+    <section class="card border-0 shadow-sm bg-white section-card contact-first" id="contact">
+      <div class="card-body p-4">
+        <h2 class="section-title"><i class="fas fa-address-card"></i> Contact</h2>
+        <div class="contact-links">
+          <a href="mailto:{{ site.data.profile.email | encode_email }}"><i class="fas fa-at"></i> {{ site.data.profile.email | replace: "@", "(at)" }}</a>
+          <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-file-alt"></i> CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="about">
+      <div class="card-body p-4">
+        <h2 class="section-title">About</h2>
+        <div class="text-profile-bio">{{ site.data.profile.short_bio }}</div>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="research-interests">
+      <div class="card-body p-4">
+        <h2 class="section-title">Research Interests</h2>
+        <p><strong>Intelligent Networking.</strong> I investigate how topology, computation, and shared wireless resources shape network decisions, with an emphasis on deep reinforcement learning (including PPO), graph neural networks, and topology-aware routing and in-network processing.</p>
+        <p class="mb-0"><strong>Multimodal &amp; Large Language Models.</strong> I work on retrieval-augmented, data-centric, and agentic AI systems for video understanding, including scalable dataset construction and controlled evaluation of LLM-driven experimental design.</p>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="education">
+      <div class="card-body p-4">
+        <h2 class="section-title">Education &amp; Training</h2>
+        {% for item in site.data.profile.education %}
+        <div class="education-entry {% unless forloop.last %}border-bottom{% endunless %}">
+          <img src="{{ item.logo | relative_url }}" alt="" class="education-logo">
+          <div class="flex-grow-1">
+            <div class="d-flex flex-wrap justify-content-between"><strong>{{ item.name }}</strong><em>{{ item.date }}</em></div>
+            <div class="small text-muted">{{ item.dept }}</div>
+            <div class="small">{{ item.position }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="research-experience">
+      <div class="card-body p-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h2 class="section-title">Research Experience</h2>
+          <a href="{{ '/research' | relative_url }}">Full research portfolio <i class="fas fa-angle-right"></i></a>
+        </div>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>Topology-Aware Network Optimization</h3><em>Sep. 2025 - Present</em></div>
+          <p class="small text-muted">Collaboration / guidance: Xiaolong Cui · Python, PyTorch, PPO, GNNs</p>
+          <ul>
+            <li>For <em>GRACE</em>, designed cross-topology generalization experiments and sensitivity analyses; evaluated robustness under unseen network conditions. I did not originate the framework or lead its core algorithm.</li>
+            <li>Lead a related Python-based UAV computation-routing project on joint routing, compute placement, and experimental evaluation; the manuscript is being revised.</li>
+          </ul>
+        </article>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>Multimodal Video Understanding Systems</h3><em>Feb. 2026 - Present</em></div>
+          <p class="small text-muted">Collaboration: Dongyan Zhang · vLLM, RAG, multimodal data pipelines</p>
+          <ul class="mb-0">
+            <li>Contributed to benchmark construction, multimodal data processing, annotation workflows, and evaluation tooling for <em>RobustVidBench</em>.</li>
+            <li>Built a three-stage video-to-QA pipeline combining knowledge-graph RAG, frame/audio extraction, and LLM agents with human verification; processed 600+ videos and 10,000+ QA pairs across 10 controlled comparisons. Open-source release is planned.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    {% assign selected_pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {% include widgets/publication_card.html publications=selected_pubs title='<i class="fas fa-star"></i> Selected Publications & Manuscripts' %}
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="projects">
+      <div class="card-body p-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h2 class="section-title">Selected Projects / Open Source</h2>
+          <a href="{{ '/projects' | relative_url }}">Project details <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div class="project-summary"><strong>Automated Video-to-QA Construction Pipeline</strong> <span class="badge badge-light">Release planned</span><br><span class="small text-muted">vLLM · RAG · Qwen · DeepSeek · multimodal agents</span></div>
+        <div class="project-summary mb-0"><strong>UAV Computation-Routing Simulation Toolkit</strong> <span class="badge badge-light">Repository link TODO</span><br><span class="small text-muted">Python · network simulation · compute placement · experiment analysis</span></div>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="patent">
+      <div class="card-body p-4">
+        <h2 class="section-title">Patent</h2>
+        <p class="mb-1"><strong>A Method and System for Joint Optimization of Computing-Network Routing and In-Network Data Processing Based on Deep Reinforcement Learning</strong></p>
+        <p class="small mb-1">Chinese Invention Patent Application, 2026 · Application No. 2026102073230</p>
+        <p class="small text-muted mb-0">Inventors: Xiaolong Cui, Xuebin Tang, Zixu Wang, Wei Huangfu, Zhenghao Xu</p>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="honors">
+      <div class="card-body p-4">
+        <h2 class="section-title">Awards &amp; Honors</h2>
+        <ul class="compact-list">
+          {% for item in site.data.profile.awards %}<li><span>{{ item.name }}</span><em>{{ item.date }}</em></li>{% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="leadership-skills">
+      <div class="card-body p-4">
+        <h2 class="section-title">Skills &amp; Activities</h2>
+        <p><strong>Technical:</strong> Python, C/C++, Java, SQL; PyTorch, TensorBoard, vLLM, Hugging Face, NumPy/Pandas, NetworkX; Linux, Git, Docker, LaTeX, CUDA.</p>
+        <p class="mb-0"><strong>Leadership:</strong> Class Monitor, Computer Science Class 242; Head of the Academic Department, Suosi Science and Technology Association.</p>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="cv">
+      <div class="card-body p-4">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <p>The current file is an explicit placeholder and will be replaced with the updated academic CV.</p>
+        <a class="btn btn-primary" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-download"></i> Download CV</a>
+      </div>
+    </section>
+  </main>
+</div>
+

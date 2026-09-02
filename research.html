@@ -1,0 +1,77 @@
+---
+layout: default
+title: Research Portfolio
+navbar_title: Research
+---
+
+<div class="page-header card border-0 shadow-sm bg-white">
+  <div class="card-body p-4 p-md-5">
+    <h1>Research Portfolio</h1>
+    <p class="lead mb-0">My work spans topology-aware network optimization, measurement-driven wireless edge intelligence, and multimodal / agentic AI systems. The entries below are organized by research question rather than treated as a single undifferentiated project line.</p>
+  </div>
+</div>
+
+<section class="portfolio-section" id="network-optimization">
+  <h2>Intelligent Network Optimization</h2>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>GRACE: Graph-Aware Routing Along with Compression for End-to-End Optimization</h3>
+    <p><span class="badge badge-primary">Manuscript under revision</span></p>
+    <p>GRACE models joint routing and compression as a graph-structured decision problem and combines graph neural representations with PPO to learn topology-aware policies. Reported experiments show lower end-to-end latency across tested settings and limited degradation on unseen topologies.</p>
+    <p class="mb-0"><strong>My contribution:</strong> cross-topology generalization experiment design and sensitivity analysis, including evaluation under unseen network conditions.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>UAV Computation-Routing Joint Optimization</h3>
+    <p><span class="badge badge-secondary">Manuscript in revision</span></p>
+    <p class="mb-0">A user-led Python research project, with guidance / collaboration from Xiaolong Cui, studying computation-aware routing, compute placement, and experimental evaluation in UAV network simulations. Detailed algorithm and repository links remain intentionally unpublished until the revised manuscript and code release are ready.</p>
+  </div></div>
+</section>
+
+<section class="portfolio-section" id="wireless-measurement">
+  <h2>Wireless Measurement, Mechanisms, and Externalities</h2>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>Compression Placement Is Not Free</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p class="mb-0">A pre-registered measurement study asks when moving compression from a source to a shared relay harms a neighboring deadline-constrained flow. Minimal topology pairs, a bit-aligned padding intervention, and a compute-delay control support an airtime-mediated mechanism, while boundary screens show the effect is conditional on coupling, load, compression ratio, and contention.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>When the Network Chooses the Data</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p class="mb-0">This work tests whether shared-medium topology and transmit actions causally change which clients participate in wireless federated learning. In the reported intervention study, relay duty suppresses hidden-victim participation and shifts tail performance; the study also reports negative results for tested inverse-probability weighting variants and a same-sign ns-3 replication.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>Limits of Recipient-Blind Pricing for Compression Placement at Shared Wireless Relays</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p class="mb-0">The paper studies an information limit of prices built only from sender-local signals: when recipient states are indistinguishable to the sender but reverse the socially preferred action, one fixed local price cannot fully implement efficiency in both states. Measured profile counterfactuals provide an oracle marginal-contribution benchmark, while the manuscript explicitly leaves deployable multi-flow attribution open.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>Which Channel Sees the Victims? Geometry Predicts Cross-Flow Externality; Rendered Vision Does Not</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p class="mb-0">A channel-comparison study evaluates geometry, rendered vision, and radio-map observations for predicting third-party victims in a UAV mesh. The reported result is strongly asymmetric: geometry nearly saturates prediction (AUC 0.999), while rendered vision contributes little incremental signal in the tested setting.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>Who Pays for My Accuracy? Counterfactual Task-Level Externality in Wireless Split Inference</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p class="mb-0">This work defines a directed, placement-specific counterfactual contrast for measuring how one split-inference flow's compute placement affects another flow's mapped task accuracy. Packet-faithful paired interventions reveal signed per-flow effects that aggregate completion can hide, and show why coarse flow-overlap graphs are insufficient for transfer magnitude.</p>
+  </div></div>
+</section>
+
+<section class="portfolio-section" id="multimodal-ai">
+  <h2>Multimodal and Agentic AI Systems</h2>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>RobustVidBench: Benchmarking Robustness of Multimodal Video Understanding</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p>The benchmark studies multimodal video-model robustness under realistic spatial and temporal degradations, including changes in bitrate, resolution, frame rate, frame dropping, and audio-video synchronization. Its construction uses a consensus-based semi-automatic annotation workflow with model cross-checking and human review.</p>
+    <p class="mb-0"><strong>My contribution:</strong> benchmark construction, multimodal data processing, annotation workflow, pipeline execution, test code, and robustness evaluation support.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>A Minimal Diversity Instruction Repairs LLM Experimental Design</h3>
+    <p><span class="badge badge-secondary">Manuscript</span></p>
+    <p class="mb-0">A controlled audit asks whether LLMs directly choose informative interventions on a packet-level wireless stack. A baseline-plus-single-flip bias leaves factors unvaried; a short diversity instruction changes probe geometry and improves mean recovery. The manuscript keeps the claim scoped: intervals overlap a strong adaptive rule, some cross-family comparisons add probes, and it does not claim a new optimal-design theorem.</p>
+  </div></div>
+  <div class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
+    <h3>Automated Video Understanding Dataset Construction</h3>
+    <p><span class="badge badge-secondary">Manuscript in preparation</span></p>
+    <p class="mb-0">A three-stage vLLM pipeline builds a knowledge graph for RAG augmentation, extracts video frames and audio, and uses agents to generate video-understanding QA pairs followed by human verification. The current corpus covers 600+ videos and 10,000+ QA pairs, with 10 controlled comparisons; an open-source release is planned.</p>
+  </div></div>
+</section>
+

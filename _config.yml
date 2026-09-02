@@ -1,0 +1,25 @@
+title: "Zhenghao Xu | Academic Homepage"
+description: "Zhenghao Xu is an undergraduate researcher at USTB working on intelligent networking and multimodal AI systems."
+url: "https://xu-zhenghao-zzz.github.io"
+baseurl: ""
+repository: "Xu-zhenghao-zzz/Xu-zhenghao-zzz.github.io"
+timezone: Asia/Shanghai
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-email-protect
+
+collections:
+  publications:
+    output: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - TODO.md
+  - vendor
+

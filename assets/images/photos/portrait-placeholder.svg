@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder for Zhenghao Xu</title>
+  <desc id="desc">Replace this file with a personal portrait.</desc>
+  <rect width="600" height="760" fill="#e9f0f6"/>
+  <circle cx="300" cy="260" r="105" fill="#9fb8cd"/>
+  <path d="M110 650c18-148 94-231 190-231s172 83 190 231" fill="#9fb8cd"/>
+  <text x="300" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#245f93">PHOTO PLACEHOLDER</text>
+  <text x="300" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#4f677a">replace this SVG with your portrait</text>
+</svg>
+
