@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Photo placeholder">
+  <rect width="320" height="200" rx="12" fill="#f4f7fa" stroke="#c5d3e0" stroke-width="2" stroke-dasharray="6 5"/>
+  <g fill="none" stroke="#8aa0b5" stroke-width="2.2" transform="translate(136 66)">
+    <rect x="6" y="14" width="36" height="26" rx="4"/>
+    <circle cx="24" cy="27" r="7"/>
+    <path d="M18 14h12l3-6h-18z"/>
+  </g>
+  <text x="160" y="132" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="13" fill="#8aa0b5">Add photo / certificate</text>
+</svg>

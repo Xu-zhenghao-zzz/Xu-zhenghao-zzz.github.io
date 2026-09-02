@@ -28,30 +28,50 @@ portrait_caption: "Photo placeholder - replace assets/images/photos/portrait-pla
 
 education:
   - name: University of Science and Technology Beijing (USTB)
-    logo: /assets/images/badges/ustb-placeholder.svg
+    logo: /assets/images/badges/ustb.svg
     dept: School of Computer and Communication Engineering
     position: B.Eng. candidate, Computer Science and Technology<br/>GPA 3.81/4.0 · Weighted Average 89.1/100 · Major Rank 10/137
     date: Sep. 2024 - Jun. 2028 (expected)
+    photos:
+      - src: /assets/images/education/placeholder.svg
+        caption: USTB campus or certificate photo
+      - src: /assets/images/education/placeholder.svg
+        caption: USTB campus or certificate photo
+      - src: /assets/images/education/placeholder.svg
+        caption: USTB campus or certificate photo
   - name: Carnegie Mellon University
-    logo: /assets/images/badges/education-placeholder.svg
+    logo: /assets/images/badges/cmu.svg
     dept: Non-degree Program
     position: Algorithms for Big Data, Prof. David P. Woodruff · Grade 88.70/100
     date: Oct. 2024 - Feb. 2025
+    photos:
+      - src: /assets/images/education/placeholder.svg
+        caption: CMU course or certificate photo
+      - src: /assets/images/education/placeholder.svg
+        caption: CMU course or certificate photo
+      - src: /assets/images/education/placeholder.svg
+        caption: CMU course or certificate photo
   - name: Westlake University
-    logo: /assets/images/badges/education-placeholder.svg
-    dept: Additional Training
-    position: Pebble Summer School / Pebble Program
+    logo: /assets/images/badges/westlake.png
+    dept: PEBBLE Program
+    position: 2026 PEBBLE BioFusion Workshop
     date: Summer 2026
+    photos:
+      - src: /assets/images/education/placeholder.svg
+        caption: PEBBLE BioFusion Workshop photo
+      - src: /assets/images/education/placeholder.svg
+        caption: PEBBLE BioFusion Workshop photo
+      - src: /assets/images/education/placeholder.svg
+        caption: PEBBLE BioFusion Workshop photo
 
 awards:
-  - name: Mathematical Contest in Modeling (ICM), Problem E - Meritorious Winner (M Award)
+  - name: Meritorious Winner, Mathematical Contest in Modeling (ICM), Problem E
     date: 2026
-  - name: Jingcai Undergraduate Innovation Program (京彩大创) - Beijing Municipal First Prize
+  - name: First Prize (Municipal), "Jingcai Dachuang" Beijing College Students' Innovation and Entrepreneurship Competition
     date: 2026
-  - name: Challenge Cup - Beijing Municipal Second Prize
+  - name: Second Prize (Municipal), "Challenge Cup" Capital College Students Entrepreneurship Plan Competition
     date: 2026
-  - name: USTB Cradle Cup (摇篮杯) - University First Prize
+  - name: First Prize, USTB "Cradle Cup" College Student Innovation and Entrepreneurship Competition
     date: 2026
-  - name: USTB Physics Competition - Third Prize
+  - name: Third Prize, USTB University Physics Competition
     date: 2025
-
