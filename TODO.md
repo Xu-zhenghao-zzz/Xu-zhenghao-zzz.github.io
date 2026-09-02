@@ -1,6 +1,6 @@
 # Content TODOs before public launch
 
-- [ ] Replace `assets/images/photos/portrait-placeholder.svg` with Zhenghao Xu's portrait (keep the same path or update `_data/profile.yml`).
+- [x] Replace `assets/images/photos/portrait-placeholder.svg` with Zhenghao Xu's portrait (keep the same path or update `_data/profile.yml`).
 - [ ] Replace `assets/pdf/cv.pdf` with the final academic CV.
 - [x] Confirm the official English name of the 2026 Westlake University Pebble summer program.
 - [x] Confirm the English translations and years for the Jingcai, Challenge Cup, Cradle Cup, and USTB Physics awards.

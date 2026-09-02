@@ -151,6 +151,18 @@ a:hover { color: #17466d; }
     margin-top: 0.1rem;
 }
 
+.sticky-top .figure-img {
+    width: 100%;
+    border-radius: 0.8rem;
+    object-fit: cover;
+}
+
+.sticky-top img.rounded-circle {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center 18%;
+}
+
 .education-photo-badge {
     color: #8aa0b5;
     font-size: 0.85rem;

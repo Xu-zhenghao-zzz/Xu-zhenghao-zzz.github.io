@@ -23,8 +23,8 @@ short_bio: >-
     that connects system measurement, learning, and deployable experimental pipelines.
   </p>
 
-portrait_url: /assets/images/photos/portrait-placeholder.svg
-portrait_caption: "Photo placeholder - replace assets/images/photos/portrait-placeholder.svg with a personal portrait."
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: "Zhenghao Xu"
 
 education:
   - name: University of Science and Technology Beijing (USTB)
