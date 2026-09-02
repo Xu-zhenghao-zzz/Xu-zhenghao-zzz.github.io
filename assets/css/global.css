@@ -267,7 +267,8 @@ a:hover { color: #17466d; }
 }
 
 .compact-list { list-style: none; padding-left: 0; margin-bottom: 0; }
-.compact-list li { display: flex; gap: 1rem; justify-content: space-between; padding: 0.25rem 0; }
+.compact-list li { display: flex; gap: 1rem; justify-content: space-between; align-items: flex-start; padding: 0.4rem 0; }
+.compact-list li span { flex: 1; min-width: 0; }
 .compact-list em { white-space: nowrap; }
 
 .page-header { margin-bottom: 1.5rem; border-left: 4px solid #245f93 !important; }
