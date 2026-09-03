@@ -8,3 +8,11 @@ vendor/
 Gemfile.lock
 
 .DS_Store
+
+# Local source documents kept out of the published site
+/personal photo.png
+/wlu1.png
+/wlu2.png
+/wlu3.png
+/期末.pdf
+/成绩单-*.pdf

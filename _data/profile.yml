@@ -32,40 +32,35 @@ education:
     dept: School of Computer and Communication Engineering
     position: B.Eng. candidate, Computer Science and Technology<br/>GPA 3.81/4.0 · Weighted Average 89.1/100 · Major Rank 10/137
     date: Sep. 2024 - Jun. 2028 (expected)
-    photos:
-      - src: /assets/images/education/placeholder.svg
-        caption: USTB campus or certificate photo
-      - src: /assets/images/education/placeholder.svg
-        caption: USTB campus or certificate photo
-      - src: /assets/images/education/placeholder.svg
-        caption: USTB campus or certificate photo
   - name: Carnegie Mellon University
     logo: /assets/images/badges/cmu.svg
     dept: Non-degree Program
     position: Algorithms for Big Data, Prof. David P. Woodruff · Grade 88.70/100
-    date: Oct. 2024 - Feb. 2025
+    date: Oct. 11, 2024 - Jan. 5, 2025
     photos:
-      - src: /assets/images/education/placeholder.svg
-        caption: CMU course or certificate photo
-      - src: /assets/images/education/placeholder.svg
-        caption: CMU course or certificate photo
-      - src: /assets/images/education/placeholder.svg
-        caption: CMU course or certificate photo
+      - src: /assets/images/education/cmu/transcript.jpg
+        caption: Official transcript, Algorithms for Big Data, Prof. David Woodruff
+      - src: /assets/images/education/cmu/final-report.jpg
+        caption: Course final report, first page
   - name: Westlake University
     logo: /assets/images/badges/westlake.png
-    dept: PEBBLE Program
-    position: 2026 PEBBLE BioFusion Workshop
-    date: Summer 2026
+    dept: Center for Interdisciplinary Studies · PEBBLE Program
+    position: 2026 PEBBLE BioFusion Workshop<br/>Excellent Research Report Award · Best Vibe Coding Award
+    date: Jul. 24 - Aug. 4, 2026
     photos:
-      - src: /assets/images/education/placeholder.svg
-        caption: PEBBLE BioFusion Workshop photo
-      - src: /assets/images/education/placeholder.svg
-        caption: PEBBLE BioFusion Workshop photo
-      - src: /assets/images/education/placeholder.svg
-        caption: PEBBLE BioFusion Workshop photo
+      - src: /assets/images/education/westlake/excellent-research-report.jpg
+        caption: Excellent Research Report Award, 2026 PEBBLE BioFusion Workshop
+      - src: /assets/images/education/westlake/best-vibe-coding.jpg
+        caption: Best Vibe Coding Award, 2026 PEBBLE BioFusion Workshop
+      - src: /assets/images/education/westlake/certificate-of-completion.jpg
+        caption: Certificate of Completion, 2026 PEBBLE BioFusion Workshop
 
 awards:
   - name: Meritorious Winner, Mathematical Contest in Modeling (ICM), Problem E
+    date: 2026
+  - name: Excellent Research Report Award, 2026 PEBBLE BioFusion Workshop, Westlake University
+    date: 2026
+  - name: Best Vibe Coding Award, 2026 PEBBLE BioFusion Workshop, Westlake University
     date: 2026
   - name: First Prize, Beijing (provincial equivalent), "Jingcai Dachuang" Beijing College Students' Innovation and Entrepreneurship Competition
     date: 2026
