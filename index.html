@@ -33,8 +33,10 @@ navbar_title: Home
     <section class="card border-0 shadow-sm bg-white section-card" id="research-interests">
       <div class="card-body p-4">
         <h2 class="section-title">Research Interests</h2>
-        <p><strong>Intelligent Networking.</strong> I investigate how topology, computation, and shared wireless resources shape network decisions, with an emphasis on deep reinforcement learning (including PPO), graph neural networks, and topology-aware routing and in-network processing.</p>
-        <p class="mb-0"><strong>Multimodal &amp; Large Language Models.</strong> I work on retrieval-augmented, data-centric, and agentic AI systems for video understanding, including scalable dataset construction and controlled evaluation of LLM-driven experimental design.</p>
+        <p><strong>Reinforcement Learning &amp; Structured Decision Making.</strong> I am interested in reinforcement learning for complex structured decision-making problems, including PPO-based policy optimization, state and action-space modeling, generalization evaluation, and robustness in unseen environments. Some of my previous work uses network topology and resource allocation as experimental settings for studying sequential and multi-variable decision making.</p>
+        <p><strong>Graph Learning.</strong> I am interested in representation learning and decision making over graph-structured data, particularly using graph neural networks to encode structural relationships and combining graph representations with reinforcement learning policies.</p>
+        <p><strong>Multimodal AI.</strong> I study multimodal foundation models, with a particular interest in dataset construction, robustness evaluation, and experimental analysis for video understanding models. My current work includes evaluating MLLMs under realistic video degradations, multimodal data processing, semi-automated annotation, and large-scale Video-QA construction.</p>
+        <p class="mb-0"><strong>LLM Agents &amp; AI Systems.</strong> I am interested in LLM-based agents, retrieval-augmented generation, automated experimental design, and AI research workflows. I am currently exploring scalable LLM-agent pipelines for data generation and experimentation, as well as systematic evaluation of LLM behavior and reliability in complex experimental tasks.</p>
       </div>
     </section>
 
@@ -84,20 +86,24 @@ navbar_title: Home
         </div>
 
         <article class="research-entry">
-          <div class="d-flex flex-wrap justify-content-between"><h3>Topology-Aware Network Optimization</h3><em>Sep. 2025 - Present</em></div>
-          <p class="small text-muted">Collaboration / guidance: Xiaolong Cui · Python, PyTorch, PPO, GNNs</p>
+          <div class="d-flex flex-wrap justify-content-between"><h3>Reinforcement Learning &amp; Graph-based Decision Making</h3><em>Sep. 2025 - Present</em></div>
+          <p class="small text-muted">Collaborator / Mentor: Xiaolong Cui · Python, PyTorch, PPO, GNN, NetworkX</p>
           <ul>
-            <li>For <em>GRACE</em>, designed cross-topology generalization experiments and sensitivity analyses; evaluated robustness under unseen network conditions. I did not originate the framework or lead its core algorithm.</li>
-            <li>Lead a related Python-based UAV computation-routing project on joint routing, compute placement, and experimental evaluation; the manuscript is being revised.</li>
+            <li>Contributed to research on graph-structured decision making with <strong>GNNs and PPO</strong>, focusing on cross-topology generalization, sensitivity analysis, and robustness evaluation in unseen environments.</li>
+            <li>Designed and organized experiments across different topologies, workload levels, and system parameters to study policy generalization and performance boundaries.</li>
+            <li>Led the implementation of a related Python research project, from problem formulation and simulation code to experimental organization.</li>
+            <li>Developed practical experience in reinforcement learning, graph modeling, large-scale experiment orchestration, parameter sweeps, and research software engineering.</li>
           </ul>
         </article>
 
         <article class="research-entry">
-          <div class="d-flex flex-wrap justify-content-between"><h3>Multimodal Video Understanding Systems</h3><em>Feb. 2026 - Present</em></div>
-          <p class="small text-muted">Collaboration: Dongyan Zhang · vLLM, RAG, multimodal data pipelines</p>
+          <div class="d-flex flex-wrap justify-content-between"><h3>Multimodal AI &amp; LLM Systems</h3><em>Feb. 2026 - Present</em></div>
+          <p class="small text-muted">Collaborator: Dongyan Zhang · Python, vLLM, RAG, Qwen, DeepSeek, multimodal models</p>
           <ul class="mb-0">
-            <li>Contributed to benchmark construction, multimodal data processing, annotation workflows, and evaluation tooling for <em>RobustVidBench</em>.</li>
-            <li>Built a three-stage video-to-QA pipeline combining knowledge-graph RAG, frame/audio extraction, and LLM agents with human verification; processed 600+ videos and 10,000+ QA pairs across 10 controlled comparisons. Open-source release is planned.</li>
+            <li>Contributed to <em>RobustVidBench</em>, including multimodal data processing, annotation workflows, experiment execution, testing code, and robustness evaluation.</li>
+            <li>Evaluated video understanding models under realistic degradations including bitrate, resolution, frame rate, frame loss, and audio-video desynchronization.</li>
+            <li>Built a three-stage automated Video-to-QA pipeline combining knowledge-augmented retrieval, frame/audio processing, LLM-agent generation, and human verification.</li>
+            <li>The current pipeline has processed <strong>600+ videos and 10,000+ QA pairs</strong>, with approximately 10 controlled experimental comparisons. Data and code are planned for public release after cleanup.</li>
           </ul>
         </article>
       </div>
@@ -112,15 +118,16 @@ navbar_title: Home
           <h2 class="section-title">Selected Projects / Open Source</h2>
           <a href="{{ '/projects' | relative_url }}">Project details <i class="fas fa-angle-right"></i></a>
         </div>
-        <div class="project-summary"><strong>Automated Video-to-QA Construction Pipeline</strong> <span class="badge badge-light">Release planned</span><br><span class="small text-muted">vLLM · RAG · Qwen · DeepSeek · multimodal agents</span></div>
-        <div class="project-summary mb-0"><strong>UAV Computation-Routing Simulation Toolkit</strong> <span class="badge badge-light">Repository link TODO</span><br><span class="small text-muted">Python · network simulation · compute placement · experiment analysis</span></div>
+        <div class="project-summary"><strong>Automated Video-to-QA Pipeline</strong> <span class="badge badge-light">Planned release</span><br><span class="small text-muted">vLLM · RAG · Qwen · DeepSeek · LLM agents · multimodal processing</span></div>
+        <div class="project-summary"><strong>Graph-based RL Evaluation Suite</strong> <span class="badge badge-light">Research code</span><br><span class="small text-muted">PyTorch · PPO · GNN · NetworkX · generalization and robustness experiments</span></div>
+        <div class="project-summary mb-0"><strong>Joint Decision-Making Simulation Toolkit</strong> <span class="badge badge-light">In preparation</span><br><span class="small text-muted">Python · simulation · multi-variable decision modeling · reproducible experiments</span></div>
       </div>
     </section>
 
     <section class="card border-0 shadow-sm bg-white section-card" id="patent">
       <div class="card-body p-4">
         <h2 class="section-title">Patent</h2>
-        <p class="mb-1"><strong>A Method and System for Joint Optimization of Computing-Network Routing and In-Network Data Processing Based on Deep Reinforcement Learning</strong></p>
+        <p class="mb-1"><strong>A Deep Reinforcement Learning Method and System for Joint Optimization of Computing-Network Routing and In-Network Data Processing</strong></p>
         <p class="small mb-1">Chinese Invention Patent Application, 2026 · Application No. 2026102073230</p>
         <p class="small text-muted mb-0">Inventors: Xiaolong Cui, Xuebin Tang, Zixu Wang, Wei Huangfu, Zhenghao Xu</p>
       </div>
@@ -138,8 +145,14 @@ navbar_title: Home
     <section class="card border-0 shadow-sm bg-white section-card" id="leadership-skills">
       <div class="card-body p-4">
         <h2 class="section-title">Skills &amp; Activities</h2>
-        <p><strong>Technical:</strong> Python, C/C++, Java, SQL; PyTorch, TensorBoard, vLLM, Hugging Face, NumPy/Pandas, NetworkX; Linux, Git, Docker, LaTeX, CUDA.</p>
-        <p class="mb-0"><strong>Leadership:</strong> Class Monitor, Computer Science Class 242; Head of the Academic Department, Suosi Science and Technology Association.</p>
+        <div class="skills-list">
+          <p><strong>Programming:</strong> Python, C/C++, Java, SQL</p>
+          <p><strong>Machine Learning:</strong> PyTorch, PPO, graph neural networks, Hugging Face, vLLM, TensorBoard</p>
+          <p><strong>Data &amp; Scientific Computing:</strong> NumPy, Pandas, NetworkX</p>
+          <p><strong>Engineering:</strong> Linux, Git, Docker, CUDA, LaTeX</p>
+          <p><strong>Research:</strong> reinforcement learning, graph learning, multimodal AI, LLM agents, experimental design, benchmarking</p>
+          <p class="mb-0"><strong>Leadership:</strong> Class Representative, Computer Science Class 242; Head of Academic Affairs, Suosi Science and Technology Association</p>
+        </div>
       </div>
     </section>
 

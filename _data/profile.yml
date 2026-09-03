@@ -15,12 +15,17 @@ short_bio: >-
   <p>
     I am an undergraduate student in Computer Science and Technology at the
     <a href="https://en.ustb.edu.cn/" target="_blank" rel="noopener">University of Science and Technology Beijing (USTB)</a>.
-    My research focuses on intelligent networked systems and multimodal AI.
   </p>
   <p>
-    I study topology-aware decision making for networks using deep reinforcement learning and graph neural networks,
-    as well as data-centric and agentic systems for large multimodal models. I am especially interested in research
-    that connects system measurement, learning, and deployable experimental pipelines.
+    My research interests lie primarily in <strong>deep reinforcement learning, graph learning, multimodal large language models, and agentic AI systems</strong>.
+    I am interested in learning-based approaches to complex structured decision-making problems, as well as reliable and reproducible systems for AI data construction and experimentation.
+  </p>
+  <p>
+    My current research experience includes <strong>PPO- and GNN-based structured decision making</strong>, robustness evaluation of multimodal video models, and automated data pipelines built with <strong>RAG, vLLM, and LLM agents</strong>.
+    Some of my earlier projects use networking systems as experimental environments; I view these projects primarily as training in reinforcement learning, graph modeling, experimental design, and research engineering rather than as a long-term focus on communication systems themselves.
+  </p>
+  <p>
+    I am particularly interested in <strong>LLMs/MLLMs, agents, deep reinforcement learning, and AI systems</strong>, especially research that connects learning algorithms with complex real-world systems.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg

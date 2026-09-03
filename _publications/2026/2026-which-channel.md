@@ -5,8 +5,8 @@ selected: false
 pub: "Manuscript"
 pub_date: "2026"
 abstract: >-
-  Compares geometry, rendered vision, and radio-map observations for predicting third-party victims in a UAV mesh. Geometry nearly saturates prediction in the reported study, while rendered vision adds little incremental signal.
+  Compares different environment representations for predicting third-party effects, including geometric structure, rendered visual information, and system measurements, asking how much target-relevant information each representation captures.
 authors: []
 links:
-  Research details: /research#wireless-measurement
+  Research details: /research#systems-experiments
 ---

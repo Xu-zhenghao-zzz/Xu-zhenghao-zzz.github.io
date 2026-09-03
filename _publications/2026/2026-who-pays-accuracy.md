@@ -1,12 +1,12 @@
 ---
 title: "Who Pays for My Accuracy? Counterfactual Task-Level Externality in Wireless Split Inference"
 date: 2026-08-28 00:01:00 +0800
-selected: true
+selected: false
 pub: "Manuscript"
 pub_date: "2026"
 abstract: >-
-  Defines a directed counterfactual contrast for task-level cross-flow effects of compute placement. Paired packet-level interventions show that aggregate completion can conceal signed per-flow changes in mapped task accuracy.
+  Uses paired counterfactual interventions to examine how the execution strategy of one task can influence the model accuracy of another. Aggregate completion metrics can hide directional, task-level changes in predictive accuracy.
 authors: []
 links:
-  Research details: /research#wireless-measurement
+  Research details: /research#systems-experiments
 ---

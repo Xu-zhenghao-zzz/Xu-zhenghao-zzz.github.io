@@ -5,8 +5,8 @@ selected: false
 pub: "Manuscript"
 pub_date: "2026"
 abstract: >-
-  Uses minimal topology pairs, a bit-aligned padding intervention, and a compute-delay control to identify when relay-side compression creates airtime-mediated deadline harm for neighboring flows, while explicitly mapping operating boundaries.
+  Examines how relocating computation or compression can affect other tasks through shared system resources, using paired interventions, controlled padding, computation-delay controls, and boundary scans to distinguish competing causal mechanisms.
 authors: []
 links:
-  Research details: /research#wireless-measurement
+  Research details: /research#systems-experiments
 ---

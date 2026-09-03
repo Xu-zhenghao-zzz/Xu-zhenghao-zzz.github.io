@@ -5,8 +5,8 @@ selected: false
 pub: "Manuscript"
 pub_date: "2026"
 abstract: >-
-  Tests whether topology and shared-medium transmit actions causally determine which clients deliver updates in wireless federated learning, and measures the resulting loss and tail-fairness shifts.
+  Studies whether system execution mechanisms can alter which data participates in a machine-learning process and, consequently, affect model outcomes, with emphasis on causal intervention, participation bias, and negative results for tested corrections.
 authors: []
 links:
-  Research details: /research#wireless-measurement
+  Research details: /research#systems-experiments
 ---

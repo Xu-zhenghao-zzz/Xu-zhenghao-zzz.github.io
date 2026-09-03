@@ -5,7 +5,7 @@ selected: true
 pub: "Manuscript under revision"
 pub_date: "2026"
 abstract: >-
-  A graph-structured decision framework combines topology-aware graph representations with PPO to jointly optimize routing and compression. Zhenghao Xu contributed cross-topology generalization experiment design and sensitivity analysis.
+  A structured decision-making framework combining graph representations with PPO for joint decisions under topology constraints. Zhenghao Xu contributed cross-topology generalization experiments, unseen-topology evaluation, and sensitivity and robustness analysis.
 authors:
   - Xiaolong Cui
   - Xuebin Tang
@@ -13,5 +13,5 @@ authors:
   - Zhenghao Xu
   - Wei Huangfu
 links:
-  Research details: /research#network-optimization
+  Research details: /research#rl-graph
 ---

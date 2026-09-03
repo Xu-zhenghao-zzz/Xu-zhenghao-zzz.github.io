@@ -5,8 +5,8 @@ selected: false
 pub: "Manuscript"
 pub_date: "2026"
 abstract: >-
-  Establishes a conditional information limit for sender-local pricing when recipient states are observationally indistinguishable yet imply different socially efficient compression placements; measured counterfactuals provide an oracle benchmark.
+  Studies informational limitations of fixed local decision rules under partial observability, focusing on local rules, globally optimal actions, and information constraints.
 authors: []
 links:
-  Research details: /research#wireless-measurement
+  Research details: /research#systems-experiments
 ---

@@ -5,8 +5,8 @@ selected: true
 pub: "Manuscript"
 pub_date: "2026"
 abstract: >-
-  Audits direct LLM intervention selection on a packet-level wireless stack. A short diversity instruction changes baseline-plus-single-flip probe geometry and improves mean recovery, with explicit uncertainty and boundary conditions.
+  A study of exploration bias when LLMs directly design experiments in complex real systems. A short diversity instruction changes the distribution of selected interventions and improves experimental coverage and recovery under the tested settings.
 authors: []
 links:
-  Research details: /research#multimodal-ai
+  Research details: /research#llm-agents
 ---

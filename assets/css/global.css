@@ -278,6 +278,9 @@ a:hover { color: #17466d; }
     padding-top: 0.75rem;
 }
 
+.skills-list p { margin-bottom: 0.45rem; }
+.portfolio-section ol { padding-left: 1.2rem; }
+
 .compact-list { list-style: none; padding-left: 0; margin-bottom: 0; }
 .compact-list li { display: flex; gap: 1rem; justify-content: space-between; align-items: flex-start; padding: 0.4rem 0; }
 .compact-list li span { flex: 1; min-width: 0; }
