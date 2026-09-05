@@ -43,7 +43,7 @@ navbar_title: Home
     <section class="card border-0 shadow-sm bg-white section-card education-card" id="education">
       <div class="card-body p-4">
         <h2 class="section-title">Education &amp; Training</h2>
-        <p class="small text-muted education-hint"><i class="fas fa-images"></i> Hover or tap a row to preview related photos and certificates.</p>
+        <p class="small text-muted education-hint"><i class="fas fa-images"></i> Hover or tap the CMU or Westlake row to preview transcripts and certificates.</p>
         {% for item in site.data.profile.education %}
         <div class="education-entry {% if item.photos %}has-photos{% endif %} {% unless forloop.last %}border-bottom{% endunless %}">
           <img src="{{ item.logo | relative_url }}" alt="{{ item.name }} emblem" class="education-logo">
