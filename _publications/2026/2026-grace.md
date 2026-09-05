@@ -2,10 +2,10 @@
 title: "GRACE: Graph-Aware Routing Along with Compression for End-to-End Optimization"
 date: 2026-08-30 00:01:00 +0800
 selected: true
-pub: "Manuscript under revision"
+pub: "IEEE Transactions on Network and Service Management (TNSM), Major Revision"
 pub_date: "2026"
 abstract: >-
-  A structured decision-making framework combining graph representations with PPO for joint decisions under topology constraints. Zhenghao Xu contributed cross-topology generalization experiments, unseen-topology evaluation, and sensitivity and robustness analysis.
+  Joint routing and in-network compression with GNN-encoded network states and a PPO training and evaluation pipeline, including cross-topology generalization experiments.
 authors:
   - Xiaolong Cui
   - Xuebin Tang
@@ -13,5 +13,5 @@ authors:
   - Zhenghao Xu
   - Wei Huangfu
 links:
-  Research details: /research#rl-graph
+  Research details: /research#grace
 ---

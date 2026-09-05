@@ -1,37 +1,10 @@
 ---
 layout: default
-title: Selected Projects
+title: Projects
 navbar_title: Projects
 ---
 
-<div class="page-header card border-0 shadow-sm bg-white"><div class="card-body p-4 p-md-5">
-  <h1>Selected Projects / Open Source</h1>
-  <p class="lead mb-0">Research code and datasets are being prepared for public release. Repository links remain placeholders until the corresponding artifacts are ready.</p>
+<div class="card border-0 shadow-sm bg-white"><div class="card-body p-4 p-md-5">
+  <h1>Projects</h1>
+  <p class="mb-0">This page is no longer listed in the navigation. Current project descriptions are on the <a href="{{ '/research' | relative_url }}">Research</a> page.</p>
 </div></div>
-
-<div class="project-grid">
-  <article class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
-    <div class="d-flex justify-content-between align-items-start"><h2>Automated Video-to-QA Pipeline</h2><span class="badge badge-info">Planned release</span></div>
-    <p>An automated pipeline for constructing video understanding datasets. The system builds retrieval-augmented context from video-related knowledge, processes video frames and audio, and uses LLM agents to generate candidate question-answer pairs followed by human verification.</p>
-    <p><strong>Scale:</strong> 600+ videos, 10,000+ QA pairs, 10+ controlled experiments.</p>
-    <p><strong>Focus:</strong> scalable multimodal dataset construction, LLM-agent workflows, and data quality control.</p>
-    <p class="mb-0"><strong>Stack:</strong> Python, vLLM, RAG, Qwen, DeepSeek, LLM agents, multimodal processing.</p>
-    <span class="text-muted"><i class="fab fa-github"></i> Repository URL will be added after release.</span>
-  </div></article>
-
-  <article class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
-    <div class="d-flex justify-content-between align-items-start"><h2>Graph-based RL Evaluation Suite</h2><span class="badge badge-secondary">Research code</span></div>
-    <p>An experimental suite for evaluating the generalization and robustness of graph-structured reinforcement learning policies. The suite originated from my experimental work on GNN + PPO structured decision-making systems.</p>
-    <p>It includes cross-topology generalization, unseen-environment evaluation, parameter sensitivity analysis, workload stress testing, and automated experiment aggregation and analysis.</p>
-    <p class="mb-0"><strong>Stack:</strong> Python, PyTorch, PPO, GNN, NetworkX.</p>
-    <span class="text-muted"><i class="fab fa-github"></i> Public code link will be added only with collaborator approval.</span>
-  </div></article>
-
-  <article class="card border-0 shadow-sm bg-white"><div class="card-body p-4">
-    <div class="d-flex justify-content-between align-items-start"><h2>Joint Decision-Making Simulation Toolkit</h2><span class="badge badge-info">In preparation</span></div>
-    <p>A Python simulation toolkit for studying complex joint decision-making problems. I have been responsible for problem formulation, core implementation, experimental design, and analysis.</p>
-    <p>The current application involves computation and routing decisions in UAV environments, while my main interest in the project is in <strong>RL environment design, multi-variable decision modeling, and reproducible experimental systems</strong>.</p>
-    <p class="mb-0"><strong>Stack:</strong> Python, simulation, NumPy/Pandas, NetworkX.</p>
-    <span class="text-muted"><i class="fab fa-github"></i> Repository URL will be added with the revised manuscript.</span>
-  </div></article>
-</div>

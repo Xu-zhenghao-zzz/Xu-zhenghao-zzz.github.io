@@ -104,7 +104,8 @@ a:hover { color: #17466d; }
     margin-bottom: 1rem;
 }
 
-.contact-first {
+.contact-first,
+#about.section-card {
     border-top: 3px solid #245f93 !important;
 }
 
@@ -286,10 +287,23 @@ a:hover { color: #17466d; }
 .compact-list li span { flex: 1; min-width: 0; }
 .compact-list em { white-space: nowrap; }
 
+.output-list {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+.output-list li + li {
+    margin-top: 0.75rem;
+}
+
 .page-header { margin-bottom: 1.5rem; border-left: 4px solid #245f93 !important; }
 .page-header h1 { font-size: 2rem; }
 .portfolio-section { margin-bottom: 2rem; }
-.portfolio-section > h2 { font-size: 1.45rem; margin: 0 0 0.75rem 0.25rem; }
+.portfolio-section > h2 { font-size: 1.25rem; margin: 0 0 0.75rem 0.25rem; }
+.portfolio-section .card h2 {
+    font-size: 1.12rem;
+    margin-bottom: 0.25rem;
+    max-width: 46rem;
+}
 .portfolio-section .card + .card { margin-top: 0.85rem; }
 .project-grid { display: grid; gap: 1rem; }
 

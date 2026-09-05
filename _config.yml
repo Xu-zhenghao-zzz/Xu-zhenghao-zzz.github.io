@@ -1,5 +1,5 @@
 title: "Zhenghao Xu | Academic Homepage"
-description: "Zhenghao Xu is an undergraduate researcher at USTB working on deep reinforcement learning, graph learning, multimodal AI, and LLM-based agent systems."
+description: "Zhenghao Xu is an undergraduate in Computer Science and Technology at USTB. His research experience includes reinforcement learning, graph learning, and multimodal AI."
 url: "https://xu-zhenghao-zzz.github.io"
 baseurl: ""
 repository: "Xu-zhenghao-zzz/Xu-zhenghao-zzz.github.io"
@@ -21,3 +21,5 @@ exclude:
   - README.md
   - TODO.md
   - vendor
+  - _unpublished
+  - scripts

@@ -3,10 +3,7 @@ pages:
     url: /
   - name: Research
     url: /research
-  - name: Publications
+  - name: Research Outputs
     url: /publications
-  - name: Projects
-    url: /projects
   - name: CV
     url: /cv
-

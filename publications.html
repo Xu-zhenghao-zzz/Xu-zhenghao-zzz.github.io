@@ -1,7 +1,7 @@
 ---
 layout: default
-title : Publications
-navbar_title: Publications
+title: Research Outputs
+navbar_title: Research Outputs
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
@@ -19,6 +19,13 @@ body_attr: >-
             {% endfor %}
         </div>
         {% endfor %}
+
+        <h2 class="pt-5" id="patent">Patent</h2>
+        <div class="my-0 p-3 bg-white shadow-sm rounded-xl">
+          <h5 class="mt-0 mb-1 font-weight-normal">A Deep Reinforcement Learning Method and System for Joint Optimization of Computing-Network Routing and In-Network Data Processing</h5>
+          <p class="mt-0 mb-0 small">Xiaolong Cui, Xuebin Tang, Zixu Wang, Wei Huangfu, <strong>Zhenghao Xu</strong></p>
+          <p class="mt-0 mb-0 small"><i>Chinese Invention Patent Application</i> No. 2026102073230, 2026</p>
+        </div>
     </div>
 
     <div class="col-2 d-none d-lg-block">
@@ -26,7 +33,7 @@ body_attr: >-
             {% for year in pubs_by_year %}
             <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
             {% endfor %}
+            <a class="nav-link d-block" href="#patent">Patent</a>
         </div>
     </div>
-
 </div>

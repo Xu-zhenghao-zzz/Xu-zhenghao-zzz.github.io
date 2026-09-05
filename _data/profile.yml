@@ -17,15 +17,9 @@ short_bio: >-
     <a href="https://en.ustb.edu.cn/" target="_blank" rel="noopener">University of Science and Technology Beijing (USTB)</a>.
   </p>
   <p>
-    My research interests lie primarily in <strong>deep reinforcement learning, graph learning, multimodal large language models, and agentic AI systems</strong>.
-    I am interested in learning-based approaches to complex structured decision-making problems, as well as reliable and reproducible systems for AI data construction and experimentation.
-  </p>
-  <p>
-    My current research experience includes <strong>PPO- and GNN-based structured decision making</strong>, robustness evaluation of multimodal video models, and automated data pipelines built with <strong>RAG, vLLM, and LLM agents</strong>.
-    Some of my earlier projects use networking systems as experimental environments; I view these projects primarily as training in reinforcement learning, graph modeling, experimental design, and research engineering rather than as a long-term focus on communication systems themselves.
-  </p>
-  <p>
-    I am particularly interested in <strong>LLMs/MLLMs, agents, deep reinforcement learning, and AI systems</strong>, especially research that connects learning algorithms with complex real-world systems.
+    My research experience spans reinforcement learning, graph learning, and multimodal AI.
+    I have worked on PPO/GNN-based decision making and generalization experiments, multimodal video robustness evaluation, and large-scale video-QA dataset construction.
+    I am broadly interested in learning algorithms and AI systems, and I am particularly interested in research where strong implementation and experimental work are central to the research process.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
@@ -35,37 +29,23 @@ education:
   - name: University of Science and Technology Beijing (USTB)
     logo: /assets/images/badges/ustb.svg
     dept: School of Computer and Communication Engineering
-    position: B.Eng. candidate, Computer Science and Technology<br/>GPA 3.81/4.0 · Weighted Average 89.1/100 · Major Rank 10/137
+    position: B.Eng. candidate, Computer Science and Technology<br/>GPA 3.81/4.0 · Weighted Average 89.6/100 · Major Rank 10/137
     date: Sep. 2024 - Jun. 2028 (expected)
   - name: Carnegie Mellon University
     logo: /assets/images/badges/cmu.svg
-    dept: Non-degree Program
+    dept: Collaborative Course
     position: Algorithms for Big Data, Prof. David P. Woodruff · Grade 88.70/100
     date: Oct. 11, 2024 - Jan. 5, 2025
-    photos:
-      - src: /assets/images/education/cmu/transcript.jpg
-        caption: Official transcript, Algorithms for Big Data, Prof. David Woodruff
-      - src: /assets/images/education/cmu/final-report.jpg
-        caption: Course final report, first page
   - name: Westlake University
     logo: /assets/images/badges/westlake.png
     dept: Center for Interdisciplinary Studies · PEBBLE Program
-    position: 2026 PEBBLE BioFusion Workshop<br/>Excellent Research Report Award · Best Vibe Coding Award
+    position: 2026 PEBBLE BioFusion Workshop
     date: Jul. 24 - Aug. 4, 2026
-    photos:
-      - src: /assets/images/education/westlake/excellent-research-report.jpg
-        caption: Excellent Research Report Award, 2026 PEBBLE BioFusion Workshop
-      - src: /assets/images/education/westlake/best-vibe-coding.jpg
-        caption: Best Vibe Coding Award, 2026 PEBBLE BioFusion Workshop
-      - src: /assets/images/education/westlake/certificate-of-completion.jpg
-        caption: Certificate of Completion, 2026 PEBBLE BioFusion Workshop
 
 awards:
-  - name: Meritorious Winner, Mathematical Contest in Modeling (ICM), Problem E
+  - name: Meritorious Winner, Interdisciplinary Contest in Modeling (ICM), Problem E
     date: 2026
   - name: Excellent Research Report Award, 2026 PEBBLE BioFusion Workshop, Westlake University
-    date: 2026
-  - name: Best Vibe Coding Award, 2026 PEBBLE BioFusion Workshop, Westlake University
     date: 2026
   - name: First Prize, Beijing (provincial equivalent), "Jingcai Dachuang" Beijing College Students' Innovation and Entrepreneurship Competition
     date: 2026
@@ -75,5 +55,3 @@ awards:
     date: 2026
   - name: First Prize, USTB "Cradle Cup" College Student Innovation and Entrepreneurship Competition
     date: 2026
-  - name: Third Prize, USTB University Physics Competition
-    date: 2025

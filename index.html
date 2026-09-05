@@ -12,17 +12,6 @@ navbar_title: Home
   <main class="col-lg-9 col-md-8">
     <div class="mt-3 d-md-none"></div>
 
-    <section class="card border-0 shadow-sm bg-white section-card contact-first" id="contact">
-      <div class="card-body p-4">
-        <h2 class="section-title"><i class="fas fa-address-card"></i> Contact</h2>
-        <div class="contact-links">
-          <a href="mailto:{{ site.data.profile.email }}"><i class="fas fa-at"></i> {{ site.data.profile.email | replace: "@", "(at)" }}</a>
-          <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-          <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-file-alt"></i> CV</a>
-        </div>
-      </div>
-    </section>
-
     <section class="card border-0 shadow-sm bg-white section-card" id="about">
       <div class="card-body p-4">
         <h2 class="section-title">About</h2>
@@ -30,22 +19,74 @@ navbar_title: Home
       </div>
     </section>
 
-    <section class="card border-0 shadow-sm bg-white section-card" id="research-interests">
+    <section class="card border-0 shadow-sm bg-white section-card" id="news">
       <div class="card-body p-4">
-        <h2 class="section-title">Research Interests</h2>
-        <p><strong>Reinforcement Learning &amp; Structured Decision Making.</strong> I am interested in reinforcement learning for complex structured decision-making problems, including PPO-based policy optimization, state and action-space modeling, generalization evaluation, and robustness in unseen environments. Some of my previous work uses network topology and resource allocation as experimental settings for studying sequential and multi-variable decision making.</p>
-        <p><strong>Graph Learning.</strong> I am interested in representation learning and decision making over graph-structured data, particularly using graph neural networks to encode structural relationships and combining graph representations with reinforcement learning policies.</p>
-        <p><strong>Multimodal AI.</strong> I study multimodal foundation models, with a particular interest in dataset construction, robustness evaluation, and experimental analysis for video understanding models. My current work includes evaluating MLLMs under realistic video degradations, multimodal data processing, semi-automated annotation, and large-scale Video-QA construction.</p>
-        <p class="mb-0"><strong>LLM Agents &amp; AI Systems.</strong> I am interested in LLM-based agents, retrieval-augmented generation, automated experimental design, and AI research workflows. I am currently exploring scalable LLM-agent pipelines for data generation and experimentation, as well as systematic evaluation of LLM behavior and reliability in complex experimental tasks.</p>
+        <h2 class="section-title">News</h2>
+        <ul class="compact-list">
+          {% for item in site.data.news %}<li><span>{{ item.title }}</span><em>{{ item.date }}</em></li>{% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="research-experience">
+      <div class="card-body p-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h2 class="section-title">Research Experience</h2>
+          <a href="{{ '/research' | relative_url }}">Full research page <i class="fas fa-angle-right"></i></a>
+        </div>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>GRACE: Graph-Aware Routing Along with Compression for End-to-End Optimization</h3><em>Sep. 2025 – Present</em></div>
+          <p class="small text-muted">Fourth Author</p>
+          <p class="mb-0">Implemented the PPO training and evaluation pipeline for joint routing and in-network compression with GNN-encoded network states. Designed cross-topology generalization experiments by directly evaluating policies trained on one topology on unseen topologies, and conducted workload, parameter-sensitivity, baseline, and ablation experiments. The manuscript is currently under Major Revision at IEEE TNSM.</p>
+        </article>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>RobustVidBench: Benchmarking Robustness of Multimodal Video Understanding</h3><em>Sep. 2025 – Present</em></div>
+          <p class="small text-muted">Fourth Author</p>
+          <p class="mb-0">Worked on benchmark data and evaluation pipelines for video MLLM robustness. Implemented video preprocessing and controlled degradations including bitrate/resolution/frame-rate reduction, frame dropping, stuttering, and audio-video misalignment. Also participated in QA verification, model evaluation, experimental analysis, and manuscript preparation.</p>
+        </article>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>Automated Video Understanding Dataset Construction</h3><em>Feb. 2026 – Present</em></div>
+          <p class="small text-muted">Fourth Author</p>
+          <p class="mb-0">Participated in the design and implementation of a Video → Knowledge Graph → Summary → QA data-construction pipeline. Implemented core video-processing and QA-generation components and used vLLM for batched model inference. The overall project covers 600+ videos; I directly worked on approximately 150 videos and generated/processed nearly 10,000 QA samples across the main pipeline and experimental variants.</p>
+        </article>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>A Recurrent Rab8a-associated Hypoxic Niche in Spatial CRISPR Tumour Data</h3><em>Jul. 2026 – Aug. 2026</em></div>
+          <p class="small text-muted">First Author · 2026 PEBBLE BioFusion Workshop, Westlake University</p>
+          <p class="mb-0">Developed a dual-view representation approach for spatial CRISPR tumour data, combining local cellular-neighborhood information and gene-expression features with graph neural networks. Contributed to model implementation, experiments, and manuscript preparation. The work received the Excellent Research Report Award.</p>
+        </article>
+
+        <article class="research-entry">
+          <div class="d-flex flex-wrap justify-content-between"><h3>Computation–Routing Joint Optimization in UAV Networks</h3><em>2025 – Present</em></div>
+          <p class="small text-muted">Second Author</p>
+          <p class="mb-0">Led problem formulation, reinforcement-learning implementation, and simulation experiments for joint routing, compute placement, and compression decisions in a shared wireless environment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card border-0 shadow-sm bg-white section-card" id="outputs">
+      <div class="card-body p-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h2 class="section-title">Selected Research Outputs</h2>
+          <a href="{{ '/publications' | relative_url }}">All research outputs <i class="fas fa-angle-right"></i></a>
+        </div>
+        <ol class="output-list">
+          <li>Xiaolong Cui, Xuebin Tang, Zixu Wang, <strong>Zhenghao Xu</strong>, Wei Huangfu. “GRACE: Graph-Aware Routing Along with Compression for End-to-End Optimization.” <em>IEEE Transactions on Network and Service Management</em> (TNSM), Major Revision.</li>
+          <li>Dongyan Zhang, Peijie Wu, Jingyu Wu, <strong>Zhenghao Xu</strong>, Xiaotian Hu, Yuqing Zhang. “RobustVidBench: Benchmarking Robustness of Multimodal Video Understanding.” Manuscript in preparation.</li>
+          <li><strong>Zhenghao Xu</strong> et al. “A Recurrent Rab8a-associated Hypoxic Niche in Spatial CRISPR Tumour Data.” Research manuscript, 2026 PEBBLE BioFusion Workshop, Westlake University.</li>
+          <li>Xiaolong Cui, Xuebin Tang, Zixu Wang, Wei Huangfu, <strong>Zhenghao Xu</strong>. “A Deep Reinforcement Learning Method and System for Joint Optimization of Computing-Network Routing and In-Network Data Processing.” Chinese Invention Patent Application No. 2026102073230, 2026.</li>
+        </ol>
       </div>
     </section>
 
     <section class="card border-0 shadow-sm bg-white section-card education-card" id="education">
       <div class="card-body p-4">
-        <h2 class="section-title">Education &amp; Training</h2>
-        <p class="small text-muted education-hint"><i class="fas fa-images"></i> Hover or tap the CMU or Westlake row to preview transcripts and certificates.</p>
+        <h2 class="section-title">Education</h2>
         {% for item in site.data.profile.education %}
-        <div class="education-entry {% if item.photos %}has-photos{% endif %} {% unless forloop.last %}border-bottom{% endunless %}">
+        <div class="education-entry {% unless forloop.last %}border-bottom{% endunless %}">
           <img src="{{ item.logo | relative_url }}" alt="{{ item.name }} emblem" class="education-logo">
           <div class="flex-grow-1">
             <div class="d-flex flex-wrap justify-content-between align-items-baseline">
@@ -55,114 +96,30 @@ navbar_title: Home
             <div class="small text-muted">{{ item.dept }}</div>
             <div class="small">{{ item.position }}</div>
           </div>
-          {% if item.photos %}
-          <span class="education-photo-badge" aria-hidden="true"><i class="fas fa-images"></i></span>
-          <div class="education-photos" role="group" aria-label="Photos for {{ item.name }}">
-            {% for photo in item.photos %}
-            <button type="button" class="education-photo" data-full="{{ photo.src | relative_url }}" data-caption="{{ photo.caption | escape }}">
-              <img src="{{ photo.src | relative_url }}" alt="{{ photo.caption | escape }}">
-            </button>
-            {% endfor %}
-          </div>
-          {% endif %}
         </div>
         {% endfor %}
       </div>
     </section>
 
-    <div id="edu-lightbox" hidden>
-      <button type="button" class="edu-lightbox-close" aria-label="Close">&times;</button>
-      <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-      </figure>
-    </div>
-
-    <section class="card border-0 shadow-sm bg-white section-card" id="research-experience">
-      <div class="card-body p-4">
-        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
-          <h2 class="section-title">Research Experience</h2>
-          <a href="{{ '/research' | relative_url }}">Full research portfolio <i class="fas fa-angle-right"></i></a>
-        </div>
-
-        <article class="research-entry">
-          <div class="d-flex flex-wrap justify-content-between"><h3>Reinforcement Learning &amp; Graph-based Decision Making</h3><em>Sep. 2025 - Present</em></div>
-          <p class="small text-muted">Collaborator / Mentor: Xiaolong Cui · Python, PyTorch, PPO, GNN, NetworkX</p>
-          <ul>
-            <li>Contributed to research on graph-structured decision making with <strong>GNNs and PPO</strong>, focusing on cross-topology generalization, sensitivity analysis, and robustness evaluation in unseen environments.</li>
-            <li>Designed and organized experiments across different topologies, workload levels, and system parameters to study policy generalization and performance boundaries.</li>
-            <li>Led the implementation of a related Python research project, from problem formulation and simulation code to experimental organization.</li>
-            <li>Developed practical experience in reinforcement learning, graph modeling, large-scale experiment orchestration, parameter sweeps, and research software engineering.</li>
-          </ul>
-        </article>
-
-        <article class="research-entry">
-          <div class="d-flex flex-wrap justify-content-between"><h3>Multimodal AI &amp; LLM Systems</h3><em>Feb. 2026 - Present</em></div>
-          <p class="small text-muted">Collaborator: Dongyan Zhang · Python, vLLM, RAG, Qwen, DeepSeek, multimodal models</p>
-          <ul class="mb-0">
-            <li>Contributed to <em>RobustVidBench</em>, including multimodal data processing, annotation workflows, experiment execution, testing code, and robustness evaluation.</li>
-            <li>Evaluated video understanding models under realistic degradations including bitrate, resolution, frame rate, frame loss, and audio-video desynchronization.</li>
-            <li>Built a three-stage automated Video-to-QA pipeline combining knowledge-augmented retrieval, frame/audio processing, LLM-agent generation, and human verification.</li>
-            <li>The current pipeline has processed <strong>600+ videos and 10,000+ QA pairs</strong>, with approximately 10 controlled experimental comparisons. Data and code are planned for public release after cleanup.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    {% assign selected_pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-    {% include widgets/publication_card.html publications=selected_pubs title='<i class="fas fa-star"></i> Selected Publications & Manuscripts' %}
-
-    <section class="card border-0 shadow-sm bg-white section-card" id="projects">
-      <div class="card-body p-4">
-        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
-          <h2 class="section-title">Selected Projects / Open Source</h2>
-          <a href="{{ '/projects' | relative_url }}">Project details <i class="fas fa-angle-right"></i></a>
-        </div>
-        <div class="project-summary"><strong>Automated Video-to-QA Pipeline</strong> <span class="badge badge-light">Planned release</span><br><span class="small text-muted">vLLM · RAG · Qwen · DeepSeek · LLM agents · multimodal processing</span></div>
-        <div class="project-summary"><strong>Graph-based RL Evaluation Suite</strong> <span class="badge badge-light">Research code</span><br><span class="small text-muted">PyTorch · PPO · GNN · NetworkX · generalization and robustness experiments</span></div>
-        <div class="project-summary mb-0"><strong>Joint Decision-Making Simulation Toolkit</strong> <span class="badge badge-light">In preparation</span><br><span class="small text-muted">Python · simulation · multi-variable decision modeling · reproducible experiments</span></div>
-      </div>
-    </section>
-
-    <section class="card border-0 shadow-sm bg-white section-card" id="patent">
-      <div class="card-body p-4">
-        <h2 class="section-title">Patent</h2>
-        <p class="mb-1"><strong>A Deep Reinforcement Learning Method and System for Joint Optimization of Computing-Network Routing and In-Network Data Processing</strong></p>
-        <p class="small mb-1">Chinese Invention Patent Application, 2026 · Application No. 2026102073230</p>
-        <p class="small text-muted mb-0">Inventors: Xiaolong Cui, Xuebin Tang, Zixu Wang, Wei Huangfu, Zhenghao Xu</p>
-      </div>
-    </section>
-
     <section class="card border-0 shadow-sm bg-white section-card" id="honors">
       <div class="card-body p-4">
-        <h2 class="section-title">Awards &amp; Honors</h2>
+        <h2 class="section-title">Awards</h2>
         <ul class="compact-list">
           {% for item in site.data.profile.awards %}<li><span>{{ item.name }}</span><em>{{ item.date }}</em></li>{% endfor %}
         </ul>
       </div>
     </section>
 
-    <section class="card border-0 shadow-sm bg-white section-card" id="leadership-skills">
+    <section class="card border-0 shadow-sm bg-white section-card" id="skills">
       <div class="card-body p-4">
-        <h2 class="section-title">Skills &amp; Activities</h2>
+        <h2 class="section-title">Skills</h2>
         <div class="skills-list">
           <p><strong>Programming:</strong> Python, C/C++, Java, SQL</p>
-          <p><strong>Machine Learning:</strong> PyTorch, PPO, graph neural networks, Hugging Face, vLLM, TensorBoard</p>
-          <p><strong>Data &amp; Scientific Computing:</strong> NumPy, Pandas, NetworkX</p>
-          <p><strong>Engineering:</strong> Linux, Git, Docker, CUDA, LaTeX</p>
-          <p><strong>Research:</strong> reinforcement learning, graph learning, multimodal AI, LLM agents, experimental design, benchmarking</p>
-          <p class="mb-0"><strong>Leadership:</strong> Class Representative, Computer Science Class 242; Head of Academic Affairs, Suosi Science and Technology Association</p>
+          <p><strong>ML &amp; AI:</strong> PyTorch, vLLM, Hugging Face, TensorBoard</p>
+          <p><strong>Development:</strong> Linux, Git, Docker, LaTeX</p>
+          <p class="mb-0"><strong>Scientific Computing:</strong> NumPy, Pandas, NetworkX, MATLAB</p>
         </div>
-      </div>
-    </section>
-
-    <section class="card border-0 shadow-sm bg-white section-card" id="cv">
-      <div class="card-body p-4">
-        <h2 class="section-title">Curriculum Vitae</h2>
-        <p>The current file is an explicit placeholder and will be replaced with the updated academic CV.</p>
-        <a class="btn btn-primary" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-download"></i> Download CV</a>
       </div>
     </section>
   </main>
 </div>
-
