@@ -7,8 +7,7 @@ pub_date: "2026"
 abstract: >-
   A dual-view graph representation of spatial CRISPR tumour data that combines local cellular-neighborhood information and gene-expression features.
 authors:
-  - Zhenghao Xu
-  - et al.
+  - Zhenghao Xu et al.
 links:
   Research details: /research#westlake
 ---

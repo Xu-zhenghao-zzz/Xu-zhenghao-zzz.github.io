@@ -5,7 +5,7 @@
 - [x] Add the Westlake Spatial CRISPR / GNN project.
 - [x] Shrink Research Outputs to GRACE, RobustVidBench, Westlake, and the patent.
 - [x] Remove Projects from the navigation until a public code or data link exists.
-- [ ] Add the RobustVidBench Hugging Face URL once the exact dataset page is confirmed.
+- [ ] Add the RobustVidBench Hugging Face URL. No public dataset named RobustVidBench is currently findable; need the exact page.
 - [ ] Add the remaining Westlake coauthor names when they can be listed publicly.
 - [ ] Add Video-to-QA to Research Outputs after the title and full author list are confirmed.
 - [ ] Optional: add USTB education photos (campus, lab, ceremony, or certificates — not the transcript).
